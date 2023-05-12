@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --title: #ECE4EF;
+    --description: #D8CEDE;
+    --description-info: #9C83A7;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(102.32deg, #030422 -2.74%, #091014 101.6%);
+    font-family: 'Source Sans Pro', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.container .cards {
+    display: flex;
+    align-items: center;
+}
+
+.cards-back {
+    height: 486px;
+    width: 348px;
+    
+    border-radius: 16px;
+    box-shadow: 0px 113px 45px rgba(0, 0, 0, 0.02), 
+    0px 64px 38px rgba(0, 0, 0, 0.08), 0px 28px 28px
+     rgba(0, 0, 0, 0.13), 0px 7px 16px rgba(0, 0, 0,
+    0.15), 0px 0px 0px rgba(0, 0, 0, 0.15);
+    color: #312D74;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.cards-back:first-child {
+    background: url(cards-back/bg-card-left.png);
+}
+
+.cards-back:last-child {
+    background: url(cards-back/bg-card-right.png);
+}
+
+  .card {
+    width: 436px;
+    height: 608px;
+    border-radius: 20px;
+    background: url(assets/bg-card-front.png);
+    box-shadow: 0px 113px 45px rgba(0, 0, 0, 0.02), 
+    0px 64px 38px rgba(0, 0, 0, 0.08), 0px 28px 28px
+     rgba(0, 0, 0, 0.13), 0px 7px 16px rgba(0, 0, 0,
+    0.15), 0px 0px 0px rgba(0, 0, 0, 0.15);
+    position: relative;
+  }
+  
+  .card-info {
+    padding: 48px 120px 60px 40px;
+  }
+
+  .card-info header {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 60px;
+  }
+
+
+.card-info h2 {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.6);
+    color: var(--title);
+}
+
+.card-info span {
+    color: var(--description);
+    font-size: 15px;
+    line-height: 18px;
+   
+}
+
+.character {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 200px;
+}
+
+main .info h4 {
+    font-weight: 700;
+    line-height: 130%;
+    font-size: 14px;
+    color: var(--title);
+}
+
+main .info span {
+    color: var(--description-info);
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.cards-back h1 {
+    -webkit-text-stroke: 1px #312D74;
+    -webkit-text-fill-color: transparent;
+  }
